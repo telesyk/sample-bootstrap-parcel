@@ -1,0 +1,21 @@
+// Example of a custom component
+
+.icon-list {
+  padding-left: 0;
+  list-style: none;
+}
+.icon-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: .25rem;
+}
+.icon-list li::before {
+  display: block;
+  flex-shrink: 0;
+  width: 0.5em;
+  height: 0.5em;
+  margin-right: .5rem;
+  border-radius: 50%;
+  content: "";
+  background-color: $primary;
+}

@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Parcel</title>
+    <link rel="stylesheet" href="scss/styles.scss">
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <header class="page__header py-4 border-bottom bg-light">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img class="d-inline-block me-2" width="40" height="32" src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" alt="Bootstrap">
+              <span>Parcel</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header><!-- end header -->
+
+      <main class="page__main">
+        <section class="page__section py-5 text-bg-dark">
+          <div class="container">
+            <!-- Carousel -->
+            <div id="carouselExampleCaptions" class="carousel slide px-lg-4" data-bs-ride="false">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://images.pexels.com/photos/4641265/pexels-photo-4641265.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="d-block w-100" alt="capture 1">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images.pexels.com/photos/8241099/pexels-photo-8241099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="d-block w-100" alt="capture 2">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="d-block w-100" alt="capture 3">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div><!-- end Carousel -->
+          </div>
+        </section><!-- end section -->
+        <section class="page__section py-5 text-bg-dark">
+          <div class="container py-5">
+            <h1>Build Bootstrap with Parcel</h1>
+            <div class="col-lg-8 px-0">
+              <p class="fs-4">You've successfully loaded the Bootstrap + Parcel example! It's loaded up with <a href="https://getbootstrap.com/">Bootstrap 5</a> and uses Parcel to compile and bundle our Sass and JavaScript.</p>
+              <p>If this button appears blue and the link appears purple, you've done it!</p>
+            </div>
+            <button type="button" class="btn btn-primary me-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">Toggle offcanvas</button>
+            <!-- Tooltips -->
+            <button class="btn btn-dark me-2" data-bs-toggle="tooltip" data-bs-title="Some tooltip text!">Tooltip demo</button>            
+            <!-- Popover -->
+            <a id="popoverButton" class="text-success me-2" href="#" role="button" data-bs-toggle="popover" title="Custom popover" data-bs-content="This is a Bootstrap popover.">Popover demo</a>
+            <!-- Toast -->
+            <button type="button" class="btn btn-success me-2" id="liveToastBtn">Toast demo</button>
+            <!-- Modals -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Modal demo
+            </button>
+          </div>
+        </section><!-- end section -->
+        <section class="page__section py-5">
+          <div class="container py-5">
+            <!-- Alerts -->
+            <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+            <div class="py-3" id="liveAlertPlaceholder"></div>
+            <!-- Collapse -->
+            <p>
+              <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Link with href
+              </a>
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Button with data-bs-target
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+              </div>
+            </div>
+          </div>
+        </section><!-- end section -->
+        <section class="page__section py-5 text-bg-light">
+          <div class="container py-5">
+            <!-- Tabs -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>Disabled</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane py-3 fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque a ducimus laborum optio excepturi veritatis incidunt aspernatur itaque pariatur adipisci alias, dolores, sint nam magni numquam, consequatur quidem blanditiis minima?</div>
+              <div class="tab-pane py-3 fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, impedit ipsam maxime nihil eaque repellendus facilis quia repudiandae omnis aspernatur natus minus possimus explicabo ad harum consequuntur ratione obcaecati sed.
+              </div>
+              <div class="tab-pane py-3 fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">tab content 3</div>
+              <div class="tab-pane py-3 fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">tab content 4</div>
+            </div>            
+          </div>
+        </section><!-- end section -->
+      </main><!-- end main -->
+
+      <footer class="page__footer border-top bg-light">
+        <div class="container py-4">
+          <h2>Guides</h2>
+          <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
+          <ul class="icon-list">
+            <li><a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/">Bootstrap quick start guide</a></li>
+            <li><a href="https://getbootstrap.com/docs/5.2/getting-started/webpack/">Bootstrap Webpack guide</a></li>
+            <li><a href="https://getbootstrap.com/docs/5.2/getting-started/parcel/">Bootstrap Parcel guide</a></li>
+            <li><a href="https://getbootstrap.com/docs/5.2/getting-started/vite/">Bootstrap Vite guide</a></li>
+            <li><a href="https://getbootstrap.com/docs/5.2/getting-started/build-tools/">Contributing to Bootstrap</a></li>
+          </ul>
+        </div>
+        <div class="container py-4">
+          <div class="icon">
+            <i class="bi bi-arrow-through-heart-fill"></i>
+            <i class="bi bi-toggles"></i>
+            <i class="bi bi-shop"></i>
+          </div>
+          <p class="text-muted">Created and open sourced by the Bootstrap team. Licensed MIT.</p>
+        </div>
+      </footer><!-- end footer -->
+    </div><!-- end page -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Woo-hoo, you're reading this text in a modal!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Modal -->
+
+    <!-- Toast popup -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="liveToast" class="toast text-bg-info" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <span class="rounded me-2 icon">
+            <i class="bi bi-bell"></i>
+          </span>
+          <strong class="me-auto">Bootstrap</strong>
+          <small>11 mins ago</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body text-light">
+          Hello, world! This is a toast message.
+        </div>
+      </div>
+    </div><!-- End Toast popup -->
+
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-end text-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- Sign In Form Sample -->
+        <form class="form-signin mx-auto text-center">
+          <style>
+            .form-signin {
+              max-width: 330px;
+              padding: 15px;
+            }
+
+            .form-signin .form-floating:focus-within {
+              z-index: 2;
+            }
+
+            .form-signin input[type="email"] {
+              margin-bottom: -1px;
+              border-bottom-right-radius: 0;
+              border-bottom-left-radius: 0;
+            }
+
+            .form-signin input[type="password"] {
+              margin-bottom: 10px;
+              border-top-left-radius: 0;
+              border-top-right-radius: 0;
+            }
+          </style>
+          <img class="mb-4" src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+          <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+          <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+          <div class="checkbox mb-3">
+            <label>
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+          </div>
+          <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+          <p class="mt-5 mb-3 text-muted">&copy; 2017–2022</p>
+        </form>
+      </div>
+    </div><!-- End Offcanvas -->
+  </body>
+</html>
