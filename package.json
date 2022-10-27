@@ -1,7 +1,6 @@
 {
   "name": "bootstrap-parcel-example",
   "description": "Include Bootstrap's source Sass and individual JavaScript plugins with Parcel.",
-  "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "parcel serve src/index.html --public-url / --dist-dir dist",
