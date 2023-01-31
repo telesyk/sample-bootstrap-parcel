@@ -1,28 +1,30 @@
-import {
-  Popover, Tooltip, Toast, Alert,
-} from 'bootstrap';
+import { Popover, Tooltip, Toast, Alert } from 'bootstrap';
 
 /**
-* Test purpose only
-* - get date
-* - get all buttons
-*/
-const userLocale = navigator.languages && navigator.languages.length
-  ? navigator.languages[0]
-  : navigator.language;
+ * Test purpose only
+ * - get date
+ * - get all buttons
+ */
+const userLocale =
+  navigator.languages && navigator.languages.length
+    ? navigator.languages[0]
+    : navigator.language;
 const currentDate = new Date();
 const dateOptions = {
-  weekday: 'long', year: 'numeric', month: 'long', day: 'numeric',
+  weekday: 'long',
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
 };
 const readableDate = currentDate.toLocaleDateString(userLocale, dateOptions);
 const buttonList = document.querySelectorAll('button');
 
 /* Popovers */
 const popoverList = document.querySelectorAll('[data-bs-toggle="popover"]');
-[...popoverList].map((popover) => new Popover(popover));
+[...popoverList].map(popover => new Popover(popover));
 /* Tooltips */
 const tooltipList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-[...tooltipList].map((tooltip) => new Tooltip(tooltip));
+[...tooltipList].map(tooltip => new Tooltip(tooltip));
 /* Toasts */
 const toastEl = document.getElementById('liveToast');
 const toastBtn = document.getElementById('liveToastBtn');
@@ -47,15 +49,18 @@ const createAlert = (message, type) => {
 
   alertPlaceholder.append(alertElement);
 };
-if (alertBtn) alertBtn.addEventListener('click', () => createAlert(`Today is ${readableDate}`, 'info'));
+if (alertBtn)
+  alertBtn.addEventListener('click', () =>
+    createAlert(`Today is ${readableDate}`, 'info')
+  );
 if (alertPlaceholder) {
-  alertPlaceholder.addEventListener('click', (e) => {
+  alertPlaceholder.addEventListener('click', e => {
     const { target } = e;
     const alertIns = Alert.getOrCreateInstance(target);
     const isAlertElm = target.classList.contains('alert');
     if (isAlertElm) {
       alertIns.close();
-      target.addEventListener('closed.bs.alert', (event) => {
+      target.addEventListener('closed.bs.alert', event => {
         event.preventDefault();
         buttonList[buttonList.length - 1].focus();
       });
