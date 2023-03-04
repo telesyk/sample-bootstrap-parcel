@@ -1,54 +1,65 @@
 // Required
-@import "~bootstrap/scss/functions";
+@import '~bootstrap/scss/functions';
 // @import "colors"; // only for custom colors override
-@import "variables"; // only for custom variables override
-@import "~bootstrap/scss/variables";
-@import "theme-colors"; // only for custom theme-colors override
-@import "~bootstrap/scss/maps";
-@import "~bootstrap/scss/mixins";
-@import "~bootstrap/scss/utilities";
+@import 'variables'; // only for custom variables override
+@import '~bootstrap/scss/variables';
+@import 'theme-colors'; // only for custom theme-colors override
+@import '~bootstrap/scss/maps';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/utilities';
 
-@import "~bootstrap/scss/root";
-@import "~bootstrap/scss/reboot";
-@import "~bootstrap/scss/type";
+@import '~bootstrap/scss/root';
+@import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/type';
 // /* proj req */@import "~bootstrap/scss/images";
-@import "~bootstrap/scss/containers";
-@import "~bootstrap/scss/grid";
-// /* proj req */@import "~bootstrap/scss/tables";
-/* proj req */@import "~bootstrap/scss/forms";
-@import "~bootstrap/scss/buttons";
-@import "~bootstrap/scss/transitions";
-@import "~bootstrap/scss/dropdown";
+@import '~bootstrap/scss/containers';
+@import '~bootstrap/scss/grid';
+/* proj req */
+@import '~bootstrap/scss/tables';
+/* proj req */
+@import '~bootstrap/scss/forms';
+@import '~bootstrap/scss/buttons';
+@import '~bootstrap/scss/transitions';
+@import '~bootstrap/scss/dropdown';
 // /* proj req */@import "~bootstrap/scss/button-group";
-@import "~bootstrap/scss/nav";
-@import "~bootstrap/scss/navbar"; // Requires nav
-// /* proj req */@import "~bootstrap/scss/card";
+@import '~bootstrap/scss/nav';
+@import '~bootstrap/scss/navbar'; // Requires nav
+/* proj req */
+@import '~bootstrap/scss/card';
 // /* proj req */@import "~bootstrap/scss/breadcrumb";
 // /* proj req */@import "~bootstrap/scss/accordion";
 // /* proj req */@import "~bootstrap/scss/pagination";
-// /* proj req */@import "~bootstrap/scss/badge";
-/* proj req */@import "~bootstrap/scss/alert";
+/* proj req */
+@import '~bootstrap/scss/badge';
+/* proj req */
+@import '~bootstrap/scss/alert';
 // /* proj req */@import "~bootstrap/scss/progress";
 // /* proj req */@import "~bootstrap/scss/list-group";
-@import "~bootstrap/scss/close";
-/* proj req */@import "~bootstrap/scss/toasts";
-@import "~bootstrap/scss/modal"; // Requires transitions
-/* proj req */@import "~bootstrap/scss/tooltip";
-/* proj req */@import "~bootstrap/scss/popover";
-/* proj req */@import "~bootstrap/scss/carousel";
+@import '~bootstrap/scss/close';
+/* proj req */
+@import '~bootstrap/scss/toasts';
+@import '~bootstrap/scss/modal'; // Requires transitions
+/* proj req */
+@import '~bootstrap/scss/tooltip';
+/* proj req */
+@import '~bootstrap/scss/popover';
+/* proj req */
+@import '~bootstrap/scss/carousel';
 // /* proj req */@import "~bootstrap/scss/spinners";
-/* proj req */@import "~bootstrap/scss/offcanvas"; // Requires transitions
+/* proj req */
+@import '~bootstrap/scss/offcanvas'; // Requires transitions
 // /* proj req */@import "~bootstrap/scss/placeholders";
 
 // Helpers
-/* proj req */@import "~bootstrap/scss/helpers";
+/* proj req */
+@import '~bootstrap/scss/helpers';
 
 // Utilities
-@import "~bootstrap/scss/utilities/api";
+@import '~bootstrap/scss/utilities/api';
 
 // Import Bootstrap Icons w/ custom path to fonts folder
-$bootstrap-icons-font-dir: "../../node_modules/bootstrap-icons/font/fonts";
-@import "bootstrap-icons/font/bootstrap-icons";
+$bootstrap-icons-font-dir: '../../node_modules/bootstrap-icons/font/fonts';
+@import 'bootstrap-icons/font/bootstrap-icons';
 
 // Custom styles
-@import "index";
+@import 'index';

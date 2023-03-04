@@ -3,8 +3,8 @@
   "description": "Include Bootstrap's source Sass and individual JavaScript plugins with Parcel.",
   "private": true,
   "scripts": {
-    "start": "parcel serve src/index.html --public-url / --dist-dir dist",
-    "build": "parcel build src/index.html --dist-dir build",
+    "start": "parcel serve src/*.html --public-url / --dist-dir dist",
+    "build": "parcel build src/*.html --dist-dir build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

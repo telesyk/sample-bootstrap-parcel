@@ -44,7 +44,9 @@ const createAlert = (message, type) => {
   alertElement.innerHTML = `<span>
     <span class="rounded me-2 icon">
       <i class="bi bi-bookmark-fill"></i>
-    </span>${message} <small>${alertPlaceholder.childNodes.length + 1}</small>
+    </span>${message} <small class="badge bg-secondary">${
+    alertPlaceholder.childNodes.length + 1
+  }</small>
   </span>`;
 
   alertPlaceholder.append(alertElement);
